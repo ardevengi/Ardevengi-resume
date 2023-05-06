@@ -1,6 +1,12 @@
 const n = 20;
 const array = [];
 
+var slider = document.getElementById("myRange");
+var x;
+slider.addEventListener("mousemove", function () {
+  x = slider.value;
+});
+
 init();
 
 function init() {
@@ -28,7 +34,7 @@ function animate(moves) {
 
   setTimeout(function () {
     animate(moves);
-  }, 300);
+  }, x);
 }
 
 function sort(arr) {
