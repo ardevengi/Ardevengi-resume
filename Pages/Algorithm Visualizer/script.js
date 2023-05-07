@@ -6,6 +6,9 @@ var x;
 slider.addEventListener("mousemove", function () {
   x = slider.value;
 });
+slider.addEventListener("touchmove", function () {
+  x = slider.value;
+});
 
 init();
 
